@@ -1,0 +1,125 @@
+
+/******************************************
+/* ABOUT PAGE
+/*******************************************/
+
+/* Center the container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 900px; */
+  }
+  
+  header {
+    color: #f0efef;
+    height: 700px;
+    background: url(../images/header_bg.jpg) no-repeat center top  rgb(153, 134, 157);
+    background-size: cover;
+    padding: 5% 20%;
+  }
+  .brand {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  header a, section a {
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .tagline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25% auto 7%;
+  }
+  header a {
+    background-color: #f9e42e;
+    color: #121212;
+  }
+  .benefits {
+    background-color: #f0efef;
+    height: 400px;
+    color: #121212;
+    padding: 5% 20%;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .intro {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  ul {
+    width: 55%;
+  }
+  li {
+    margin: 10px;
+  }
+  .testimonial {
+    color: #f0efef;
+    height: 200px;
+    background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    position: relative;
+  }
+  section div {
+    background-color: rgb(134,141,157, 0.2);
+    position: absolute;
+    height: inherit;
+    width: 100%;
+  }
+  blockquote {
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    font-size: 18px;
+    padding: 2.5% 0 3% 0;
+  
+  }
+  blockquote p:nth-child(1) {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  blockquote p:nth-child(2) {
+    font-weight: 600;
+  }
+  .sign-up {
+    height: 70px;
+    background-color: #f9e42e;
+    padding: 15px;
+  }
+  section a {
+    background-color: #121212;
+    color: #f0efef;
+    margin: 0 auto;
+    
+  }
+  footer {
+    height: 200px;
+    background-color: #121212;
+    padding: 30px 0 0 0;
+    color: #f0efef;
+    text-align: center;
+  }
+  p.brand {
+    color: #f9e42e;
+  }
+  footer img {
+    height: 20px;
+    margin: 30px 15px;
+  }
+  .copyright {
+    font-size: 9px;
+    font-weight: 600;
+  }
+  
+  
