@@ -1,0 +1,244 @@
+/*
+Project Name: Page layout with Flex module
+Client: Relaxr
+Author: Giovanna Licia
+Developer @GA in London
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/**********************
+LAYOUT
+***********************/
+
+/* header */
+
+.header-container {
+  display: flex;
+  align-items: baseline;
+}
+.nav {
+  flex-basis: 100%;
+}
+h1 {
+  max-width: 25%;
+}
+.list {
+  max-width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+/* main */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content {
+  flex-basis: 100%;
+ }
+.aside {
+  max-width: 24%;
+  order: 1;
+  flex-direction: column;
+}
+.article {
+  max-width: 74%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.img {
+  max-width: 100%;
+  background-color: #033048; 
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.sign-up {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.closing-bar {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+/***********************
+STYLE
+***********************/
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #033048;
+}
+
+/* header */
+
+.header-container {
+  background-color: #033048;
+  padding: 20px 10%;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color:  #f0efef;
+}
+.list a {
+  text-decoration: none;
+  display: block;
+  color:  #f9e42e;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.1em;
+  border-radius: 5%;
+}
+
+.list li {
+  margin: 0 1.5%;
+}
+.nav a:hover {
+  background-color: #f9e42e;
+  color: #033048;
+}
+.active:active {
+  background-color: #f9e42e;
+}
+/* main */
+
+.main {
+  background-color: #f0efef;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* main article */
+
+article {
+  border-bottom: 1px solid #033048;
+  margin: 4rem 0;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  /* margin-bottom: 1rem; */
+}
+.subhead::first-letter {
+  float: left;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-right: 10px;
+}
+article a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #033048;
+}
+.readmore {
+  display: block;
+  margin: 2rem 0;
+  text-align: end;
+}
+.text a:hover {
+  font-weight: 800;
+}
+.img {
+  margin: 1rem 0; 
+  display: block;
+  object-fit: cover;
+}
+
+/* main aside */
+
+aside div {
+  margin: 4rem 0;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.categories a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+  color: inherit;
+}
+.categories a:hover {
+  font-weight: 600;
+}
+.categories li {
+  margin-bottom: 0.5rem;
+}
+.about a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: inherit; 
+}
+.about a:hover {
+  font-weight: 800;
+}
+.about p {
+  margin-bottom: 0.3rem;
+}
+
+.ad {
+  height: 600px;
+  width: 90%;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+/* footer */
+
+.sign-up {
+  background-color: #f9e42e;
+  padding: 10px;
+}
+.cta {
+  text-decoration: none;
+  width: 190px;
+  background-color: #121212;
+  color: #f0efef;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px; 
+  font-weight: 800;
+  border-radius: 5px;
+}
+.closing-bar {
+  background-color: #121212;
+  color: #f0efef;
+  padding: 30px 0;
+}
+p.logo {
+  color: #f9e42e;
+}
+.copyright {
+  font-size: 12px;
+  font-weight: 600;
+}
+footer img {
+  height: 20px;
+  margin: 30px 15px;
+}
